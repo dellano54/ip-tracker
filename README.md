@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <h2>To install enter the following commands:
+    <h3> INSTRUCTIONS FOR INSTALLING GODS EYE:
     </h2>
   </head>
   <body>
