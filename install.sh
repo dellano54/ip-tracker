@@ -6,7 +6,7 @@ cd ..
 rm -r Gods-eye
 cd /opt/ip-tracker/
 pip3 install -r requirements.txt
-ln tracker /bin/
+ln godseye /bin/
 echo "
 "
-echo "NOW YOU CAN ENTER tracker IN ANY TERMINAL TO OPEN IP-TRACKER"
+echo "NOW YOU CAN ENTER godseye IN ANY TERMINAL TO OPEN IP-TRACKER"
