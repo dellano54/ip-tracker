@@ -5,12 +5,15 @@
     <h3> INSTRUCTIONS FOR INSTALLING GODS EYE:
     </h2>
   </head>
-  <body>
-   <pre>
+  <body>   
+    This is only for Educational purpose.</br>I am not respnsible for any dammage caused by this tool.
+    </br>
+  <pre>
   <code>
   cd Gods-eye/
   sudo chmod +x install.sh
   sudo ./install.sh
+  #use root for only installaion.use non-root user for tracking.
   </code>
 </pre>
     </br>
