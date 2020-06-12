@@ -6,8 +6,6 @@
     </h2>
   </head>
   <body>   
-    This is only for Educational purpose.</br>I am not respnsible for any damage caused by this tool.</br>
-  use root for only installaion.use non-root user for tracking.
     </br>
   <pre>
   <code>
@@ -17,6 +15,9 @@
   </code>
 </pre>
     </br>
+  </br>
+   This is only for Educational purpose.</br>I am not respnsible for any damage caused by this tool.</br>
+  use root for only installaion.use non-root user for tracking.
   </br>
   <h3> SCREENSHOT </h3>
   <img src ="/screenshot/Screenshot 2020-06-12 05:49:18.png" alt="img not found"
