@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get install python3 alsa-utils -y
+sudo apt-get install python3 alsa-utils figlet -y
 mkdir /opt/ip-tracker
 mv * /opt/ip-tracker
 cd ..
