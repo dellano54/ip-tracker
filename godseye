@@ -2,4 +2,4 @@
 
 cd
 cd /opt/ip-tracker/
-python3 Gods-eye.py
+python3 gods-eye.py
