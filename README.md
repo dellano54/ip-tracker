@@ -6,16 +6,14 @@
     </h2>
   </head>
   <body>   
-    This is only for Educational purpose.</br>I am not respnsible for any dammage caused by this tool.
+    This is only for Educational purpose.</br>I am not respnsible for any dammage caused by this tool.</br>
+  use root for only installaion.use non-root user for tracking.
     </br>
   <pre>
   <code>
   cd Gods-eye/
   sudo chmod +x install.sh
   sudo ./install.sh
-  
-  
-  #use root for only installaion.use non-root user for tracking.
   </code>
 </pre>
     </br>
