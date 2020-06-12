@@ -8,7 +8,7 @@ import webbrowser
 
 
 
-os.system ("figlet T R A C K E R")
+os.system ("figlet G O D S - E Y E")
 print("                                 -by dellano")
 engine = pyttsx3.init('espeak')
 
