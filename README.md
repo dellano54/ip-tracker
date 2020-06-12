@@ -15,8 +15,6 @@
 </pre>
     </br>
   </br>
+  <img src ="Screenshot 2020-06-12 05:49:18.png" alt="img not found"
     </html>
     
-# screenshot
-
-![Screenshot](/screenshot/Screenshot 2020-06-12 05:49:18.png?raw=true)
