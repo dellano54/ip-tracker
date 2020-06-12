@@ -1,5 +1,0 @@
-# /bin/bash
-
-cd
-cd /opt/tracker/
-python3 tracker.py
