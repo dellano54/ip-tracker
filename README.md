@@ -6,6 +6,11 @@
     </h2>
   </head>
   <body>
-    cd Gods-eye </br> sudo chmod +x install.sh </br> sudo ./install.sh
-    </body>
+   <pre>
+  <code>
+  cd Gods-eye/
+  sudo chmod +x install.sh
+  sudo ./install.sh
+  </code>
+</pre>
     </html>
