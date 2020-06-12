@@ -13,6 +13,8 @@
   cd Gods-eye/
   sudo chmod +x install.sh
   sudo ./install.sh
+  
+  
   #use root for only installaion.use non-root user for tracking.
   </code>
 </pre>
