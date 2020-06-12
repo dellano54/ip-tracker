@@ -6,7 +6,7 @@
     </h2>
   </head>
   <body>   
-    This is only for Educational purpose.</br>I am not respnsible for any dammage caused by this tool.</br>
+    This is only for Educational purpose.</br>I am not respnsible for any damage caused by this tool.</br>
   use root for only installaion.use non-root user for tracking.
     </br>
   <pre>
