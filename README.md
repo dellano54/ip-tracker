@@ -1,6 +1,7 @@
 # Gods-eye
 <!DOCTYPE html>
 <html>
+  <meta name="google-site-verification" content="nndzEDrAeFU6uxmF5jOvELOanzHA0QT0h7zJoxRGxzg" />
   <head>
     <h3> INSTRUCTIONS FOR INSTALLING GODS EYE:
     </h2>
