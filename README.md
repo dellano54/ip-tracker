@@ -11,5 +11,5 @@
   
 <h3>screenshots</h3>
   
-![image](https://raw.githubusercontent.com/dellano54/Gods-eye/master/screenshot/screenshot.png)
-![image](https://raw.githubusercontent.com/dellano54/Gods-eye/master/screenshot/Screenshot%202020-06-12%2005%3A54%3A53.png)
+![we are having an error in displaying image.we will fix it soon.](https://raw.githubusercontent.com/dellano54/Gods-eye/master/screenshot/screenshot.png)
+![we are having an error in displaying image.we will fix it soon.](https://raw.githubusercontent.com/dellano54/Gods-eye/master/screenshot/Screenshot%202020-06-12%2005%3A54%3A53.png)
