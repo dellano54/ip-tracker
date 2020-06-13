@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="google-site-verification" content="l9iYRtBO2RDyN0a_8oqh-kevqMNpmNxk94Y_alqWo_g" />
     <h3> INSTRUCTIONS FOR INSTALLING GODS EYE:
     </h2>
   </head>
