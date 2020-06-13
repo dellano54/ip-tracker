@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 # Gods-eye
 
 # commands for installing gods-eye
