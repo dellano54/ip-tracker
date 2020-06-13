@@ -1,5 +1,6 @@
 # Gods-eye
 
+<head><meta name="google-site-verification" content="nndzEDrAeFU6uxmF5jOvELOanzHA0QT0h7zJoxRGxzg" /></head>
 
 # commands for installing gods-eye:
 ```
