@@ -9,7 +9,7 @@ import webbrowser
 
 
 os.system ("figlet G O D S - E Y E")
-print("                                       -by dellano")
+print("                                       -by dellano samuel fernandez")
 engine = pyttsx3.init('espeak')
 
 
