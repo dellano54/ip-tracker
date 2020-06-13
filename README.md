@@ -3,7 +3,7 @@
 
 # commands for installing gods-eye
 ```
-   cd Gods-eye/
+  cd Gods-eye/
   sudo chmod +x install.sh
   sudo ./install.sh
   ```
