@@ -2,19 +2,11 @@
 # Gods-eye
 
 # commands for installing gods-eye
-<html>
-  <head</head>
-  <body>
-    <pre>
-  <code>
-  cd Gods-eye/
+```
+   cd Gods-eye/
   sudo chmod +x install.sh
   sudo ./install.sh
-  #use root for only installation do not ude root-user/access ehile tracking.
-  </code>
-</pre>
-    </html>
-  
+  ```
   I am not responsible for any damage caused by this tool.
   This is only for educational purpose.
   
