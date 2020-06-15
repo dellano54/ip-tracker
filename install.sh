@@ -1,13 +1,13 @@
 #!/bin/bash
 sudo apt-get install python3 alsa-utils figlet espeak -y
-mkdir /opt/ip-tracker
-mv * /opt/ip-tracker
+mkdir /opt/Gods-eye
+mv * /opt/Gods-eye
 cd ..
 rm -r Gods-eye
-cd /opt/ip-tracker/
+cd /opt/Gods-eye/
 pip3 install -r requirements.txt
-ln godseye /bin/
+ln gods-eye /bin/
 chmod +x /usr/bin/gods-eye
 echo "
 "
-echo "NOW YOU CAN ENTER gods-eye IN ANY TERMINAL TO OPEN IP-TRACKER"
+echo "NOW YOU CAN ENTER gods-eye IN ANY TERMINAL TO OPEN gods-eye"
