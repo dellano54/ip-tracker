@@ -1,5 +1,5 @@
 # /bin/bash
 
 cd
-cd /opt/ip-tracker/
+cd /opt/Gods-eye/
 python3 gods-eye.py
