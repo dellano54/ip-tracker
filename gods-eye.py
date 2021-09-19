@@ -1,16 +1,14 @@
-import urllib
 from urllib.request import urlopen as open
-import os
 import json
 import pyttsx3
 import re 
 import webbrowser
+from pyfiglet import Figlet
 
 
-
-os.system ("figlet G O D S - E Y E")
+print(Figlet().renderText('Gods - eye'))
 print("                                       -by dellano samuel fernandez")
-engine = pyttsx3.init('espeak')
+engine = pyttsx3.init()
 
 
 
@@ -19,12 +17,9 @@ engine = pyttsx3.init('espeak')
 def goto2():
     global ip
     ip = input("Enter ip address  : ")
-    url = "http://ip-api.com/json/"
-    check(ip)
+    exit() if ip.lower() == 'exit' else check(ip)
 
 
-
-    
 
 
 def speak(audio):
@@ -39,12 +34,16 @@ regex = '''^(25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)\.(
             25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)$'''
 
        
-def check(Ip):  
-    if(re.search(regex, Ip)):  
+def check(Ip):
+    if(Ip.startswith('192')):
+        print("I think its a private ip address")
+        speak('Invalid ip address,sir')
+        goto2()
+
+    elif(re.search(regex, Ip)): 
         print("Valid Ip address found")
         speak("locating sir")
         goto1()
-
      
     else:
         print("Invalid ip address")
@@ -62,9 +61,8 @@ def goto1():
     lat = str(values['lat'])
     lon = str(values['lon'])
     a = lat + ","
-    b = lon + "/"
-    c = b + "data=!3m1!1e3?hl=en"
-    location = a + c
+    b = lon + "/" + "data=!3m1!1e3?hl=en"
+    location = a + b
 
 
     maps = "https://www.google.com/maps/search/"
@@ -90,4 +88,4 @@ def goto1():
     goto2()           
         
 goto2()
-            
+          
