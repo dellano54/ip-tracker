@@ -9,14 +9,8 @@
   sudo chmod +x install.sh
   sudo ./install.sh
   ```
-# Easy installation
-```
-wget https://github.com/dellano54/Scripts-for-repositories/raw/master/Gods-eye.sh && sudo chmod +x Gods-eye.sh && sudo ./Gods-eye.sh
-  ```
 
-  I am not responsible for any damage caused by this tool.
-  This is only for educational purpose.
-  
+
 <h3>screenshots</h3>
   
 ![we are having an error in displaying image.we will fix it soon.](https://raw.githubusercontent.com/dellano54/Gods-eye/master/screenshot/screenshot.png)
