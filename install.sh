@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get install python3 alsa-utils figlet espeak -y
+sudo apt-get install python3 -y
 mkdir /opt/gods-eye
 mv * /opt/gods-eye
 
