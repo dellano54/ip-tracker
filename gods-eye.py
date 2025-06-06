@@ -1,91 +1,77 @@
-from urllib.request import urlopen as open
-import json
-import pyttsx3
-import re 
+import requests
 import webbrowser
-from pyfiglet import Figlet
+import re
+import sys
 
 
-print(Figlet().renderText('Gods - eye'))
-print("                                       -by dellano samuel fernandez")
-engine = pyttsx3.init()
+#command line arguments
+if len(sys.argv) <= 1:
+    print("NOT ENOUGH ARGUMENTS\nCorrect Usage: python gods_eye.py <ip_address> (or) gods_eye <ip_address>")
+    sys.exit()
+
+if sys.argv[1] == "--help" or sys.argv[1] == "-h":
+    print("Correct Usage: python gods_eye.py <ip_address> (or) gods_eye <ip_address>")
+    print("python gods_eye.py -h (or) --help => this message")
+    sys.exit()
+
+#intilizing variables
+
+URL_API = "http://ip-api.com/json/"
+MAP_ADDR = "https://www.google.com/maps/search/{lat},{lon}/data=!3m1!1e3?hl=en"
+REGEX = re.compile(
+    r'^('
+    r'(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)'  # 0-255
+    r'\.){3}'
+    r'(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)'  # 0-255
+    r'$'
+)
 
 
 
+#To check if its a valid ip address
+def check(ip_addr: str):
+    if not re.search(REGEX, ip_addr):
+        print("ip address is not valid")
+        sys.exit()
 
 
-def goto2():
-    global ip
-    ip = input("Enter ip address  : ")
-    exit() if ip.lower() == 'exit' else check(ip)
+#check for ip location
+
+def get_information(ip_addr: str):
+    response = requests.get(URL_API+ip_addr)
+
+    if response.status_code != 200:
+        print("cant fetch details")
+        sys.exit()
+
+    data = response.json()
+    lat, lon = data['lat'], data['lon']
+
+    if data['status'] != "success":
+        print("cant locate")
+        sys.exit()
+
+    print(" IP: ", data['query'])
+    print(" Status: ", data['status'])
+    print(" city: ", data['city'])
+    print(" ISP: ", data['isp'])
+    print(" latitude: ",  lat)
+    print(" longitude: ", lon)
+    print(" country: ", data['country'])
+    print(" region: ", data['regionName'])
+    print(" city: ", data['city'])
+    print(" zip: ", data['zip'])
+    print(" AS: ", data['as'])
 
 
-
-
-def speak(audio):
-    engine.say(audio)
-    engine.runAndWait()
-
+    webbrowser.open(
+        MAP_ADDR.format(
+            lat=lat,
+            lon=lon
+        )
+    )
     
-    
-regex = '''^(25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)\.( 
-            25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)\.( 
-            25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)\.( 
-            25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)$'''
 
-       
-def check(Ip):
-    if(Ip.startswith('192')):
-        print("I think its a private ip address")
-        speak('Invalid ip address,sir')
-        goto2()
-
-    elif(re.search(regex, Ip)): 
-        print("Valid Ip address found")
-        speak("locating sir")
-        goto1()
-     
-    else:
-        print("Invalid ip address")
-        speak("Invalid ip address,sir")
-        goto2()
-
-def goto1():
-   
-    url = "http://ip-api.com/json/"
-    response = open(url + ip)
-    data = response.read()
-    values = json.loads(data)
-    status = values['status']
-    success = "success"
-    lat = str(values['lat'])
-    lon = str(values['lon'])
-    a = lat + ","
-    b = lon + "/" + "data=!3m1!1e3?hl=en"
-    location = a + b
-
-
-    maps = "https://www.google.com/maps/search/"
-    webbrowser.open(maps + location)
-    
-
-    print(" IP: " + values['query'])
-    print(" Status: " + values['status'])
-    print(" city: " + values['city'])
-    print(" ISP: " + values['isp'])
-    print(" latitude: " + lat)
-    print(" longitude: " + lon)
-    print(" country: " + values['country'])
-    print(" region: " + values['regionName'])
-    print(" city: " + values['city'])
-    print(" zip: " + values['zip'])
-    print(" AS: " + values['as'])
-    if status == success:
-        speak("sucessfully located")
-    else:
-        speak("cannot find the location,sir")    
-    
-    goto2()           
-        
-goto2()
-          
+ip_addr = sys.argv[1]
+check(ip_addr)
+get_information(ip_addr)
