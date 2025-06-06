@@ -1,4 +1,3 @@
 #!/bin/bash
 
-cd /opt/gods-eye/
-python3 gods-eye.py
+python3 /opt/gods-eye/gods-eye.py
