@@ -10,9 +10,11 @@
   sudo ./install.sh
   ```
 
+# usage
+```
+gods-eye <ip_addr> (or) gods-eye --help
+```
 
 <h3>screenshots</h3>
-  
-![we are having an error in displaying image.we will fix it soon.](https://raw.githubusercontent.com/dellano54/Gods-eye/master/screenshot/screenshot.png)
 ![we are having an error in displaying image.we will fix it soon.](https://raw.githubusercontent.com/dellano54/Gods-eye/master/screenshot/Screenshot%202020-06-12%2005%3A54%3A53.png)
 
